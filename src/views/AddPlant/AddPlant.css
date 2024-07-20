@@ -1,0 +1,42 @@
+.plant-input{
+    display: block;
+    margin: 10px;
+    width: 200px;
+    height: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+   
+}
+.title-plant{
+    color: rgb(125, 125, 240);
+}
+.plant-form{
+ 
+    margin-left: 650px;
+
+     
+}
+.add-btn{
+    background-color: black;
+    color: white;
+    width: 70px;
+    border-radius:5px ;
+    justify-content: center;
+    margin-left: 70px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 30px;
+    
+}
+.back-home{
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 45px;
+    height: 33px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+  

@@ -23,7 +23,7 @@ function Home() {
 
     useEffect(() => {
         loadPlants();
-    }, []); // Empty dependency array ensures this runs once
+    }, []); 
 
     return (
         <div>
