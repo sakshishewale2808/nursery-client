@@ -1,40 +1,16 @@
-import React from 'react'
-import "./PlantCard.css"
-import axios from 'axios'
-import toast from 'react-hot-toast'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import "./PlantCard.css";
 
-function PlantCard({ _id,name,category,price, description,loadPlants }) {
-
-  const  deletePlant = async(PlantId)=>{
-    const response = await axios.delete(`${process.env.REACT_APP_API_URL}/Plant/${PlantId}`)
-    toast.success(response.data.message)
-    loadPlants()
-
-  }
+function PlantCard({ name, category, image, price, description }) {
   return (
     <div className='plant-card'>
-      <h1 className='plant-title'>{name}</h1>
-      <p className='plant-price'>price:{price}</p>
-      <p>{category}</p>
-      <p className='des'>{description}</p>
-      
-    
-      
-      <div>
-        <Link type='button' className='plant-card-action-btn'to={`/Update/${_id}`}>Edit</Link>
-
-        <button type='button'  
-        className='plant-card-action-btn' 
-        onClick={()=>{
-          deletePlant(_id)
-     }}>
-      Delete</button>
-      </div>
-      
+        <img src={image} alt={name} className='plant-image' />
+        <h1 className='plant-name'>{name}</h1>
+        <p className='plant-category'>Category: {category}</p>
+        <p className='plant-price'>Price: {price}</p>
+        <p className='plant-description'>{description}</p>
     </div>
-  
-  )
+  );
 }
 
-export default PlantCard
+export default PlantCard;

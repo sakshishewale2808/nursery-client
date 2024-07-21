@@ -1,27 +1,29 @@
-.plant-card{
-    border: 1px solid rgb(8, 8, 8);
-    padding:  5px 20px;
+.plant-card {
+    border: 1px solid #ccc;
+    padding: 1px;
+    margin: 16px;
     border-radius: 8px;
-    margin: 20px;
-    font-family: cursive;
-   
-  
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width:10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.plant-title{
-    font-size: 20px;
-    font-family: cursive;
+
+.plant-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 16px;
 }
-.plant-card-action-btn{
-    background-color: black;
-    color: white;
-    border-radius: 30px;
-    padding: 5px 20px;
-    border: none;
-    margin: 0 20px;
-    cursor: pointer;
-    text-decoration: none;
+
+.plant-name {
+    font-size: 24px;
+    font-weight: bold;
 }
-.des{
- font-size: 18px;
- font-family: cursive;
+
+.plant-category, .plant-price, .plant-description {
+    margin: 8px 0;
 }
