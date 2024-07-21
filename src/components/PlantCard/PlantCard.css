@@ -1,29 +1,48 @@
 .plant-card {
     border: 1px solid #ccc;
-    padding: 1px;
-    margin: 16px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    width:10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    font-family: 'Arial, sans-serif';
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #f9f9f9;
 }
-
-.plant-image {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 16px;
-}
-
-.plant-name {
+.plant-title {
     font-size: 24px;
-    font-weight: bold;
+    font-family: 'Georgia, serif';
+    color: #333;
+    margin-bottom: 10px;
 }
 
-.plant-category, .plant-price, .plant-description {
-    margin: 8px 0;
+.plant-price {
+    font-size: 20px;
+    color: #27ae60;
+    margin-bottom: 10px;
 }
+
+.plant-category {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+}
+
+.des {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.plant-card-action-btn {
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    margin: 0 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+

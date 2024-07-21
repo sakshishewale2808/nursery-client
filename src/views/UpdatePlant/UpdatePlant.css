@@ -8,18 +8,14 @@
    
 }
 .update-btn{
-    background-color: black;
+    background-color: #3498db;
     color: white;
-    width: 70px;
+    width: 90px;
     border-radius:5px ;
     justify-content: center;
-    margin-left: 70px;
+    margin-left: 170px;
     height: 30px;
     padding: 5px;
     margin-top: 30px;
-    
-}
-.plant-form{
- 
-    margin-left: 650px;
+    border:none;
 }

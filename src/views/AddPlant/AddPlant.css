@@ -1,42 +1,53 @@
-.plant-input{
-    display: block;
-    margin: 10px;
-    width: 200px;
-    height: 20px;
-    border-radius: 4px;
-    margin-top: 20px;
-   
+.plant-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.title-plant{
-    color: rgb(125, 125, 240);
-}
-.plant-form{
- 
-    margin-left: 650px;
 
-     
+.title-plant {
+    text-align: center;
+    font-size: 28px;
+    color:black;
+    margin-bottom: 20px;
 }
-.add-btn{
+
+.plant-input {
+    display: block;
+    height: 40px;
+    margin: 10px auto;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
     background-color: black;
     color: white;
-    width: 70px;
-    border-radius:5px ;
-    justify-content: center;
-    margin-left: 70px;
-    height: 30px;
-    padding: 5px;
-    margin-top: 30px;
-    
-}
-.back-home{
-    text-decoration: none;
-    color: black;
-    border: 1px solid gray;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 16px;
     margin-top: 20px;
-    margin-left: 40px;
-    width: 45px;
-    height: 33px;
-    font-size: 18px;
-    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
 }
-  
+.back-home {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+    border: none;
+    width: fit-content;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 15px;
+    text-decoration: none;
+    background-color: #3498db;
+}

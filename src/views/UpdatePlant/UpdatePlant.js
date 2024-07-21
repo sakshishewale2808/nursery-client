@@ -78,7 +78,7 @@ function UpdatePlant() {
         <button type='button' className='update-btn' onClick={updateplant}>Update</button>
       </form>
       <br></br>
-      <Link to="/" className='back-home'>⬅️Back To home</Link>
+      <Link to="/" className='back-home'>Back To home</Link>
 <Toaster/>
     </div>
   )

@@ -8,11 +8,12 @@ function AddPlant() {
     const [name,setName]=useState("")
     const [category,setCategory]=useState("")
     const [price,setPrice]=useState("0")
+    const [image,setImage]=useState("")
     const [ description,setDescription]=useState("")
 
     const addPlant = async()=>{
         toast.loading("Adding plant...")
-        if(!name || !category||!price||!description){
+        if(!name || !category||!price||!image||!description){
             toast.error("please Enter all details")
             return
         }
@@ -20,6 +21,7 @@ function AddPlant() {
             name:name,
             category:category,
             price:price,
+            image:image,
             description:description
         })
         toast.dismiss()
@@ -28,6 +30,7 @@ function AddPlant() {
         setName("")
         setCategory("")
         setPrice("")
+        setImage("")
         setDescription("")
         
 
@@ -67,7 +70,7 @@ function AddPlant() {
         <button type='button' onClick={addPlant} className='add-btn'>AddPlant</button>
       </form>
       <br/>
-      <Link to="/" className='back-home'>⬅️Back To home</Link>
+      <Link to="/" className='back-home'>Back To home</Link>
       <Toaster/>
     </div>
   )
