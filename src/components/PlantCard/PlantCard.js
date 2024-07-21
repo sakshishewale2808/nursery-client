@@ -4,7 +4,7 @@ import axios from 'axios'
 import toast from 'react-hot-toast'
 import { Link } from 'react-router-dom'
 
-function PlantCard({ _id,name,category,price, image,description,loadPlants }) {
+function PlantCard({ _id,name,category,price,description,loadPlants }) {
 
   const  deletePlant = async(PlantId)=>{
     const response = await axios.delete(`${process.env.REACT_APP_API_URL}/Plant/${PlantId}`)
@@ -17,7 +17,6 @@ function PlantCard({ _id,name,category,price, image,description,loadPlants }) {
       <h1 className='plant-title'>{name}</h1>
       <p className='plant-price'>price:{price}</p>
       <p>{category}</p>
-      <p>{image}</p>
       <p className='des'>{description}</p>
       
     
